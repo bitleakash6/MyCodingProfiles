@@ -1,2 +1,2 @@
 # MyCodingProfiles
-Creating simple webpage where I am putting my dsa skill and coding profiles 
+Creating simple webpage where I am putting my dsa skills and coding profiles 
