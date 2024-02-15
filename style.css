@@ -10,11 +10,6 @@ body {
     position: relative;
 }
 
-.container {
-    height: 340px;
-    width: 100%;
-}
-
 .image {
     display: flex;
     align-items: center;
@@ -107,9 +102,7 @@ body {
 
 @media (max-width: 900px) {
     /* Add specific styles for screens wider than 600px (tablets and desktops) */
-    .container{
-        height: 313px;
-    }
+    
     .image img {
         width: 8vw;
         height: 8vw;
