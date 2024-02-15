@@ -1,35 +1,35 @@
-html, body{
+body {
     margin: 0;
     padding: 0;
-    background-color: lightgrey;
+    background-color: darkgray;
 }
 
-#main{
+#main {
     height: 100%;
     width: 100%;
     position: relative;
 }
 
-.container{
-    height: 360px;
+.container {
+    height: 340px;
     width: 100%;
 }
 
-.image{
+.image {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
 }
 
-.image img{
-    background-color: antiquewhite;
+.image img {
+    background-color: rgb(225, 215, 204);
     border-radius: 50%;
-    width: 8vw;
-    height: 8vw;
+    width: 7vw;
+    height: 7vw;
 }
 
-.heading{
+.heading {
     display: block;
     width: auto;
     margin: 1vw 1vw;
@@ -37,47 +37,47 @@ html, body{
     margin-bottom: 0;
 }
 
-.heading h1 a{
+.heading h1 a {
     text-decoration: none;
 }
 
-.heading p{
+.heading p {
     font-size: 1.2rem;
     text-align: center;
 }
 
-.links{
+.links {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1vw;
 }
 
-.links .item{
+.links .item {
+    background-color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgb(201, 157, 157);
     border-radius: 20px;
     height: 2.5vw;
     width: 16vh;
-    background-color: #62b1a2;
     margin: 0 1vw;
     padding: 0 1vw;
 }
 
-.links .item a:hover{
-    color: white;
+.links .item a:hover {
+    color: black;
 }
 
-.item a{
+.item a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: bold;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -85,50 +85,45 @@ html, body{
     align-items: center;
 }
 
-.box{
+.page-item-wrap {
+    margin-bottom: 10px; /* Adjust spacing between items */
+}
+
+.page-item-each {
+    background-color: white; /* Red color */
+    color: black; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    width: 500px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    text-decoration: none; /* Remove default underline */
     display: flex;
-    height: 2.5vw;
-    width: 34vw;
-    border-radius: 20px;
-    border: 2px solid black;
-    justify-content: space-evenly;
     align-items: center;
-    margin: 0.3vw 0.3vw;
-    background-color: #6e7a78;
+    justify-content: center;
 }
 
-.box a{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    font-size: 18px;
-    color: black;
+.page-item-each:hover {
+    background-color: #f2e4e4; /* Darker red color on hover */
 }
 
-.box a:hover{
-    color: white;
-}
-
-@media (max-width: 600px){
-    .image{
-        margin-top: 2rem;
+@media (max-width: 900px) {
+    /* Add specific styles for screens wider than 600px (tablets and desktops) */
+    .container{
+        height: 313px;
+    }
+    .image img {
+        width: 8vw;
+        height: 8vw;
     }
 
-    .image img{
-        height: 16vw;
-        width: 16vw;
+    .links .item {
+        height: 7.5vw;
+        width: 16vh;
+        margin: 3px 2vw;
+        padding: 1px 1vw;
     }
 
-    .links .item{
-        height: 10vw;
-        width: 28vw;
-        margin-bottom: 2vw;
-    }
-
-    .box{
-        height: 11vw;
-        width: 84vw;
-        margin: 1vw 0;
+    .box {
+        height: 4vw;
+        width: 40vw;
     }
 }
